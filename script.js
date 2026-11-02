@@ -35,7 +35,7 @@ document.querySelectorAll(".reveal, .unveil").forEach((el) => io.observe(el));
 // Nav background, floating WhatsApp button and a light parallax on the big photos.
 const nav = document.querySelector(".nav");
 const wa = document.querySelector(".wa-float");
-const parallax = [heroImg, ...document.querySelectorAll("[data-parallax]")];
+const parallax = [...document.querySelectorAll("[data-parallax]")];
 let ticking = false;
 const onScroll = () => {
   const y = window.scrollY;
