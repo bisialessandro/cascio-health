@@ -127,13 +127,13 @@ h1 em, h2 em { font-style: italic; color: var(--terra); }
 .section--sage h2 em, .section--sage .eyebrow { color: var(--terra-dark); }
 
 /* Mosaic */
+.food-intro { max-width: 580px; margin: -1.2rem auto 2.5rem; color: var(--muted); }
 .mosaic {
   display: grid; gap: 14px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 240px 240px;
   grid-template-areas: "a a b c" "a a d e" ;
 }
-.mosaic .m-f { display: none; }
 .mosaic figure { position: relative; overflow: hidden; border-radius: var(--radius); }
 .mosaic img { width: 100%; height: 100%; object-fit: cover; }
 .mosaic figure:hover img { transform: scale(1.06); }
@@ -260,8 +260,7 @@ h1 em, h2 em { font-style: italic; color: var(--terra); }
 /* Responsive */
 @media (max-width: 900px) {
   .nav__links { display: none; }
-  .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 280px 180px 180px 180px; grid-template-areas: "a a" "b c" "d e" "f f"; }
-  .mosaic .m-f { display: block; grid-area: f; }
+  .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 280px 180px 180px; grid-template-areas: "a a" "b c" "d e"; }
   .cards { grid-template-columns: 1fr; }
   .card { aspect-ratio: 16/10; }
 }
