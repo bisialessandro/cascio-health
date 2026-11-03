@@ -12,9 +12,9 @@ document.querySelectorAll("[data-wa]").forEach((a) => {
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // Hero: slide the headline in once the photo is ready (or after 1.2s at most).
-const heroImg = document.querySelector(".hero__bg");
+const heroImg = document.querySelector(".hero__portrait");
 const startHero = () => document.body.classList.add("loaded");
-if (heroImg.complete) startHero();
+if (!heroImg || heroImg.complete) startHero();
 else { heroImg.addEventListener("load", startHero, { once: true }); setTimeout(startHero, 1200); }
 
 // Items in a group appear one after the other.
