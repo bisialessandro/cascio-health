@@ -219,6 +219,10 @@ h1 em, h2 em { font-style: italic; color: var(--terra); }
 .footer .logo span { color: #fff; }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, .1); margin-bottom: 1.5rem; }
 .footer__links { display: flex; gap: 1.5rem; font-weight: 600; color: #fff; }
+.footer__privacy { max-width: 60em; padding: 0 0 1.4rem; margin-bottom: 1.2rem; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.footer__privacy h2 { font-family: var(--sans); font-size: .9rem; font-weight: 700; color: #fff; margin-bottom: .5rem; }
+.footer__privacy p { font-size: .8rem; line-height: 1.7; }
+.footer__privacy a { color: #fff; text-decoration: underline; text-underline-offset: .2em; }
 .disclaimer { font-size: .8rem; opacity: .7; max-width: 60em; margin-bottom: .8rem; }
 .copy { font-size: .8rem; opacity: .5; }
 
