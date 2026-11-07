@@ -15,6 +15,12 @@ document.querySelectorAll("[data-wa-privacy]").forEach((a) => {
   a.rel = "noopener";
 });
 
+document.querySelectorAll("[data-wa-list]").forEach((a) => {
+  a.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Ciao Nicolas! Ho visto il tuo sito e vorrei chiederti la lista degli alimenti che scegli più spesso.")}`;
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // Hero: slide the headline in once the photo is ready (or after 1.2s at most).

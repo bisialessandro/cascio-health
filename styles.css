@@ -141,6 +141,16 @@ h1 em, h2 em { font-style: italic; color: var(--terra); }
 }
 .m-a { grid-area: a; } .m-b { grid-area: b; } .m-c { grid-area: c; } .m-d { grid-area: d; } .m-e { grid-area: e; }
 
+/* Food list request */
+.food-list { padding: clamp(2rem, 5vw, 4rem) 0; background: var(--paper); }
+.food-list__inner { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: clamp(2rem, 5vw, 4rem); border-radius: var(--radius); background: var(--sage-soft); }
+.food-list h2 { max-width: 14em; margin-bottom: 1.1rem; font-size: clamp(2rem, 3.5vw, 3.3rem); }
+.food-list__copy > p:last-child { max-width: 34em; color: var(--muted); }
+.food-list__action { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.7rem; border-radius: calc(var(--radius) - 5px); background: var(--paper); }
+.food-list__label { color: var(--terra); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.food-list__action p { max-width: 26em; }
+.food-list__action small { color: var(--muted); font-size: .78rem; }
+
 /* Method cards */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
 .card { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-height: 315px; padding: 1.7rem; border-radius: var(--radius); overflow: hidden; background: var(--sage-soft); color: var(--ink); }
@@ -267,6 +277,7 @@ h1 em, h2 em { font-style: italic; color: var(--terra); }
   .hero h1 { font-size: clamp(3.2rem, 7vw, 4.8rem); }
   .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 240px); grid-template-areas: "a b" "c d" "e e"; }
   .mosaic .m-e { width: calc(50% - 7px); justify-self: center; }
+  .food-list__inner { grid-template-columns: 1fr; gap: 1.5rem; }
   .cards { grid-template-columns: 1fr; }
   .card { min-height: 235px; }
 }
